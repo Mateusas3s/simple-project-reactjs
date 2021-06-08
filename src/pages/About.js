@@ -1,4 +1,7 @@
 import React from "react"
+import Button from "../components/button"
+import Header from "../components/header"
+import AppTemplate from "../components/templates/app"
 import '../styles/App.css'
 
 
@@ -22,8 +25,8 @@ class About extends React.Component{
   }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <AppTemplate>
+        <Header>
           {console.log(this.props)}
           <p> Esta é uma breve descrição sobre mim mesmo! </p>
           <p> Eu me chamo {this.props.user.personalInfo.name} e atuo profissionalmente como {this.props.user.employerInfo.carrer} </p>
@@ -31,11 +34,11 @@ class About extends React.Component{
             <h1> Mudar nome do usuário </h1>
             <div>
               <input type="text" placeholder="digite o novo usuário" onChange={this.changeUserName} value={this.state.userName}></input>
-              <button type="button" onClick={this.handleChangeName}>Mudar Nome</button>
+              <Button type="button" handleChangeName={this.handleChangeName} text="Mudar Nome"/>
             </div>
           </div>
-        </header>
-      </div>
+        </Header>
+      </AppTemplate>
     )
   }
 }
