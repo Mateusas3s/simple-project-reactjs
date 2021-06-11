@@ -27,7 +27,7 @@ class About extends React.Component{
     return (
       <AppTemplate>
         <Header>
-          {console.log(this.props)}
+          {/* {console.log(this.props)} */}
           <p> Esta é uma breve descrição sobre mim mesmo! </p>
           <p> Eu me chamo {this.props.user.personalInfo.name} e atuo profissionalmente como {this.props.user.employerInfo.carrer} </p>
           <div>
