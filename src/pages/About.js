@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "../components/button"
 import Header from "../components/header"
+import Link from "../components/link"
 import AppTemplate from "../components/templates/app"
 import '../styles/App.css'
 
@@ -37,6 +38,7 @@ class About extends React.Component{
               <Button type="button" handleChangeName={this.handleChangeName} text="Mudar Nome"/>
             </div>
           </div>
+          <Link link="/" text="Home"/>
         </Header>
       </AppTemplate>
     )

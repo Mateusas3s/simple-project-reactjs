@@ -2,6 +2,7 @@ import logo from '../styles/logo.svg'
 import '../styles/App.css'
 import Header from '../components/header'
 import AppTemplate from '../components/templates/app'
+import Link from '../components/link';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <Link link="/about" text="About"/>
       </Header>
     </AppTemplate>
   );
